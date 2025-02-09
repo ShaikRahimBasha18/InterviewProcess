@@ -6,7 +6,8 @@
     /* border: 2px solid red ; */
     height: 35px;
     width: 98.89%;
-    border-radius:0px;
+    top:0;
+    left:0;
     background-color: black;
 }
 .navgs1ulcls1{
@@ -175,9 +176,10 @@
 	
     display: flex;
     top: 35px;
+    left:0;
     padding-bottom: 0px;
     border: 2px solid green;
-    height: 30px;
+    height: 35px;
     background-color: #000000;
     width: 98.89%;
 }
