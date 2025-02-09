@@ -1,13 +1,8 @@
-*{
-    padding: 0px;
 
-}
-#navgs1{
+  #navgs1{
     /* border: 2px solid red ; */
     height: 35px;
     width: 98.89%;
-    top:0;
-    left:0;
     background-color: black;
 }
 .navgs1ulcls1{
@@ -62,6 +57,7 @@
     width: 188px;
     justify-content: center;
 }
+
 
 #bginp1{
     position: absolute;
@@ -176,7 +172,7 @@
 	
     display: flex;
     top: 35px;
-    left:0;
+    /* left:0; */
     padding-bottom: 0px;
 /*     border: 2px solid green; */
     height: 35px;
@@ -194,7 +190,7 @@
     margin-top: 2px;
     width: 98.8%;
     height: 25px;
-}
+}   
 #ConceptList1{
     /* border: 2px solid blue; */
     width: 250px;
@@ -428,5 +424,7 @@
 #skip-btn:hover {
 	background-color: #f0f0f0;
 }
-
+#vid{
+    margin-top: 0px;
+}
 
