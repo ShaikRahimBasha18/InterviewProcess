@@ -5,65 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="./GainSkills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body style="height: fit-content;">
-    <header style="position: fixed;z-index: 1;top: 0;">
-        <nav id="navgs1" style="position: fixed;z-index: 1;">
-            <ul id="navgs1ul1" class="navgs1ulcls1" style="height: 25px;padding-top:5px;padding-bottom: 2px;">
-              <li id="navgs1li1" class="navgs1ulcls1"><a href="./GainSkills.html"><img src="./logo.jpg" alt="" style="height: 20px; width: 150px;"></a></li>
-              <li id="navgs1li2" class="navgs1ulcls1"><input type="text" style="width: 450px; border-radius: 20px;height: 24px;border: 1px solid white;" placeholder="     search....."></li>
-              <li id="navgs1li5" class="navgs1ulcls1"><button id="navgs1li1btn5" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;padding-left: 326px;"><a href="./GainSkills.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-house"></i>Home</a></button></li>
-              <li id="navgs1li6" class="navgs1ulcls1"><button id="navgs1li1btn6" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;"><a href="./AboutUs.html" style="text-decoration: none;color: white;">AboutUs</a></button></li>
-              <li id="navgs1li7" class="navgs1ulcls1"><button id="navgs1li1btn7" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;"><a href="./GainSkillsLogin.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-user"></i>Sign up/login</a></button></li>
-               
-            </ul>
-        </nav>
-   </header>
-  <main style="margin-top: 35px;">
-    <div style="top: 30px;height: 710px;">
+    <header style="position: fixed;width:100%; z-index: 1;">
+		<nav class="nav" style="padding-left: 0px;height: 20px;z-index: 1;">
+			<button id="menubtn1"  style="background: none;border: 2px solid black;padding-left: 10px;color: white;"><i class="fa-solid fa-bars"></i></button>
+			<button id="menubtn2"  style="background: none;border: 2px solid black;padding-left: 10px;color: white;display: none;"><i class="fa-solid fa-x"></i></button>			
+			<ul  class="list" style="gap: 10px;">
+			<a href="./GainSkills.html"><img src="./logo.jpg" alt="" style="height: 20px; width: 150px;"></a>
+			<input type="text" style="width: 450px; border-radius: 20px;height: 24px;border: 1px solid white;" placeholder="     search....."></li>
+			</ul>
+			<ul class="list1 " >
+				<li><a href="./GainSkills.html">Home</a></button></li>
+				<li><a href="./AboutUs.html" >AboutUs</a></button></li>
+				<li  id="navgs1li7"><button style="border-radius: 20px;color: white;padding-left: 5px;background-color: orangered;"><a href="./GainSkillsLogin.html">Sign Up/Login</a></button></li>
+				 </ul>
+			</nav>
+			<nav class="nav2">
+				<ul class="list2">
+					<li><a href="./BuildResume.html" >Build Resume</a></li>
+					<li><a href="./OnlineAssessment.html">Online Assessment</a></li>
+					<li><a href="./TechnicalInterview.html">Technical Interview</a></li>
+					<li><a href="./Hrround.html">Hr Interview</a></li>
+					<li><a href="./FinalR.html">Final Interview</a></li>
+					<li><a href="./GroupDiscussion.html">Group Discussion</a></li>
+				</ul>
+		   </nav>
+           <nav id="menubar1" style="background-color: #000000ae;height: 30px;text-align: center;position: fixed;width: 100%;display: none;">
+			<ul style="display: flex;flex-wrap: wrap;gap: 100px;justify-items: center;text-align: center;padding: 5px;">
+				<li><a href="./GainSkills.html">Home</a></li>
+				<li><a href="./AboutUs.html">About Us</a></li>
+				<li><a href="./GainSkillsLogin.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+  <main id="main" style="width: 100%;height: 100%;padding-top: 71px;" >
+    <div style="top: 30px;height: 710px;display: flex;flex-wrap: wrap;">
         <video src="./childVideo.mp4" style="height: 710px;width: 100%;margin-top: 0px;object-fit: cover;"autoplay muted loop></video>
     
             
-            <form id="login-form" style="width: 450px;height: fit-content;margin-left:10px;top: 200px;position: absolute;background-color: aliceblue;border-radius: 10px;padding: 20px;">
+            <form id="login-form" style="width: 300px;height: fit-content;margin-left:400px;top: 200px;position: absolute;background-color: aliceblue;border-radius: 10px;padding: 20px;">
                 <h2>Login</h2>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
     
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-    
+                <label for="password" >Password:</label>
+                <input type="password" id="password" class="password-input" class="password-input" name="password" required>
                 <button id="login-btn">Login with Gmail</button>
                 <div class="options">
                     <p>Don't have an account? <button id="register-link" style="border-style: none;">Register</button></p>
+                    <br><br>
                     <button id="skip-btn"><a href="./GainSkills.html" style="text-decoration: none;color: darkslateblue;">Skip for now</a></button>
                 </div>
             </form>
             
-            <form id="register-form" style="border-radius:10px;width: 380px;height: fit-content;margin-left: 10px;top: 200px;position: absolute;background-color: aliceblue;display: none;padding: 20px;">
-                <h2>Register</h2>
+            <form id="register-form" style="border-radius:10px;width: 400px;height:400px;margin-left: 300px;top: 200px;position: absolute;background-color: aliceblue;display: none;padding: 20px;">
+                <h2>Register Here</h2>
+                <br><br>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
+                <input type="text" id="name" name="name" >
+                <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+                <br>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-    
+                <input type="password" id="password" class="password-input" name="password" required>
+                <br>
                 <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-    
-                <button id="register-btn">Register</button>
+                <input type="password" id="password" class="password-input" name="confirm-password" required>
+                <button id="register-btn"><a href="./GainSkillsLogin.html">Register</a></button>
             </form>
-            <div id="video-content1" style="height: 650px;width: 50%;position: absolute;margin-left: 700px;top: 30px;">
+            <!-- <div id="video-content1" style="height: 650px;width: 50%;position: absolute;margin-left: 700px;top: 30px;">
                 <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 60px;padding-top: 250px;"><b>Login 😊</b></p>
                 <hr style="width: 50%;padding-left: 100px;margin-left: 60px;">
                 <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 60px;"><b>Build a future you believe in</b></h1>
                 <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 60px;">Scroll Now</h3>
-            </div>
+            </div> -->
     </div>
   </main>
-  <footer style="background-image: url('./footerImg.jpg');height: 250px;width: 100%;margin-top: 0px;" id="footer">
+  <footer style="background-image: url('./footerImg.jpg');height:fit-content;width: 100%;margin-top: 0px;" id="footer">`
     <div id="" class="footerDivcls1"><a href="" style="text-decoration: none;"></a><h1 style="color: white;">GainSkills</h1><p style="color: white;">Our website is a comprehensive platform dedicated to guiding individuals through the interview process, offering valuable insights and tips to enhance their skills and confidence.</p></div>
     <div class="footerDivcls1"><a href="" style="text-decoration: none;"><h2 style="color: white;">Interview Process Selection</h2>
         <ul style="list-style: none;color: white;">
@@ -97,20 +118,18 @@
     </a></div>
    
    </footer>
-  <script src="./GainSkills.js">
-    // let h3submit=document.getElementById("h3submit")
-    // let registerSubmit1=document.getElementById("registerSubmit1")
-    // registerSubmit1.addEventListener("click",()=>{
-    //     console.log("hello")
+  <script>
+    let registerbtn=document.getElementById("register-link")
+let loginform=document.getElementById("login-form")
+let registerfrom=document.getElementById("register-form")
+let registerbtn2=document.getElementById("register-btn")
+  registerbtn.addEventListener('click',()=>{
+  console.log("hello1")
+  loginform.style.display="none"
+  registerfrom.style.display='block'
+})
 
-    //     h3submit.innerText="Registration Successful"
-    // })
-    // let registerForm1=document.getElementById("registerForm1")
-    // let loginform1=document.getElementById("loginform1")
-    // let loginButton1=document.getElementById("loginButton1")
-    // loginButton1.addEventListener("click",()=>{
-    //     loginform1.style.display="none"
-    // })
+
   </script>
 </body>
 </html>
