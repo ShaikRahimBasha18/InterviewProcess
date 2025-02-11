@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Round</title>
     <link rel="stylesheet" href="./GainSkills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header style="position: fixed;z-index: 1;top: 0;">
-       <nav id="navgs1" style="position: fixed;z-index: 1;">
-            <ul id="navgs1ul1" class="navgs1ulcls1" style="height: 25px;padding-top:5px;padding-bottom: 2px;">
-              <li id="navgs1li1" class="navgs1ulcls1"><a href="./GainSkills.html"><img src="./logo.jpg" alt="" style="height: 20px; width: 150px;"></a></li>
-              <li id="navgs1li2" class="navgs1ulcls1"><input type="text" style="width: 450px; border-radius: 20px;height: 24px;border: 1px solid white;" placeholder="     search....."></li>
-              <li id="navgs1li5" class="navgs1ulcls1"><button id="navgs1li1btn5" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;padding-left: 326px;"><a href="./GainSkills.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-house"></i>Home</a></button></li>
-              <li id="navgs1li6" class="navgs1ulcls1"><button id="navgs1li1btn6" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;"><a href="./AboutUs.html" style="text-decoration: none;color: white;">AboutUs</a></button></li>
-              <li id="navgs1li7" class="navgs1ulcls1"><button id="navgs1li1btn7" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;"><a href="./GainSkillsLogin.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-user"></i>Sign up/login</a></button></li>
-               
-            </ul>
-        </nav>
-        <nav id="navgsIR2" style="position: fixed;z-index: 1;top:35px;">
-            <ul id="navgs2ul2">
-                <li id="navgs2li1" class="navgs2licls1"><a href="./BuildResume.html" style="color: white;text-decoration: none;">Build Resume</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./OnlineAssessment.html"  style="color:white;text-decoration: none;">Online Assessment</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./TechnicalInterview.html"  style="color:white;text-decoration: none;">Technical Interview</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./Hrround.html"  style="color:white;text-decoration: none;">Hr Interview</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./FinalR.html"  style="color:white;text-decoration: none;">Final Interview</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./GroupDiscussion.html"  style="color:white;text-decoration: none;">Group Discussion</a></li>
-            </ul>
-       </nav>
-
-   </header>
+    <header style="position: fixed;width:100%;z-index: 1;">
+		<nav class="nav" style="padding-left: 0px;height: 20px;z-index: 1;">
+			<button id="menubtn1"  style="background: none;border: 2px solid black;padding-left: 10px;color: white;"><i class="fa-solid fa-bars"></i></button>
+			<button id="menubtn2"  style="background: none;border: 2px solid black;padding-left: 10px;color: white;display: none;"><i class="fa-solid fa-x"></i></button>			
+			<ul  class="list" style="gap: 10px;">
+			<a href="./GainSkills.html"><img src="./logo.jpg" alt="" style="height: 20px; width: 150px;"></a>
+			<input type="text" style="width: 450px; border-radius: 20px;height: 24px;border: 1px solid white;" placeholder="     search....."></li>
+			</ul>
+			<ul class="list1 " >
+				<li><a href="./GainSkills.html">Home</a></button></li>
+				<li><a href="./AboutUs.html" >AboutUs</a></button></li>
+				<li  id="navgs1li7"><button style="border-radius: 20px;color: white;padding-left: 5px;background-color: orangered;"><a href="./GainSkillsLogin.html">Sign Up/Login</a></button></li>
+				 </ul>
+			</nav>
+			<nav class="nav2">
+				<ul class="list2">
+					<li><a href="./BuildResume.html" >Build Resume</a></li>
+					<li><a href="./OnlineAssessment.html">Online Assessment</a></li>
+					<li><a href="./TechnicalInterview.html">Technical Interview</a></li>
+					<li><a href="./Hrround.html">Hr Interview</a></li>
+					<li><a href="./FinalR.html">Final Interview</a></li>
+					<li><a href="./GroupDiscussion.html">Group Discussion</a></li>
+				</ul>
+		   </nav>
+           <nav id="menubar1" style="background-color: #000000ae;height: 30px;text-align: center;position: fixed;width: 100%;display: none;">
+			<ul style="display: flex;flex-wrap: wrap;gap: 100px;justify-items: center;text-align: center;padding: 5px;">
+				<li><a href="./GainSkills.html">Home</a></li>
+				<li><a href="./AboutUs.html">About Us</a></li>
+				<li><a href="./GainSkillsLogin.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
    <main id="Main" style="display: flex;flex-wrap: wrap;" >
-    <div class="GsSidebar" id="SideNav" data-scrolled="true" >
-        <div id="InnerSideNav1" style="width: 300px;height: 800px;margin-top: 50px;position:absolute;">
+    <div class="GsSidebar" id="SideNav" data-scrolled="true" style="margin-top: 72px;" >
+        <div id="InnerSideNav1" style="width: 250px;height: 800px;position:absolute;padding-top: 20px;">
             <h2 style="font-family: Segoe UI,Arial,sans-serif;font-weight: 400;padding-left: 90px;"><b>Tips</b></h4>
             <ul id="TipsUl1" style="gap: 10px;padding: 10px;">
             <!-- <h2 style="font-family: Segoe UI,Arial,sans-serif;font-weight: 400;padding-left: 0px;">1.Choose the Right Format</h4> -->
@@ -79,7 +89,7 @@
 
 </main>
 <article>
-    <div id="BuildResumeConDiv" style="height:fit-content;width:1100px;display: block;margin-left: 305px;margin-top:100px;overflow-y: scroll;padding-left: 10px;">
+    <div id="BuildResumeConDiv" style="height:fit-content;display: block;margin-left: 305px;margin-top:100px;">
        <p style="font-family: Verdana, sans-serif;line-height: 1.5;font-size: 15px;">
         The final round of an interview process is typically the last stage before a hiring decision is made. It is designed to assess whether you are the best fit for the role, team, and company culture. This round often involves senior stakeholders, such as hiring managers, department heads, or even C-level executives, depending on the organization and role. Below is a detailed breakdown of what the final round usually entails:
         <hr>
@@ -262,5 +272,8 @@
 
 </div>
 </article>
+<script src="./GainSkills.js">
+
+</script>
 </body>
 </html>
