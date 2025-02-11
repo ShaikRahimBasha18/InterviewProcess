@@ -5,43 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="./GainSkills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <header style="position: fixed;z-index: 1;top: 0;">
-       <nav id="navgs1" style="position: fixed;z-index: 1;">
-            <ul id="navgs1ul1" class="navgs1ulcls1" style="height: 25px;padding-top:5px;padding-bottom: 2px;">
-              <li id="navgs1li1" class="navgs1ulcls1"><a href="./GainSkills.html"><img src="./logo.jpg" alt="" style="height: 20px; width: 150px;"></a></li>
-              <li id="navgs1li2" class="navgs1ulcls1"><input type="text" style="width: 450px; border-radius: 20px;height: 24px;border: 1px solid white;" placeholder="     search....."></li>
-              <li id="navgs1li5" class="navgs1ulcls1"><button id="navgs1li1btn5" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;padding-left: 326px;"><a href="./GainSkills.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-house"></i>Home</a></button></li>
-              <li id="navgs1li6" class="navgs1ulcls1"><button id="navgs1li1btn6" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;"><a href="./AboutUs.html" style="text-decoration: none;color: white;">AboutUs</a></button></li>
-              <li id="navgs1li7" class="navgs1ulcls1"><button id="navgs1li1btn7" style="border-radius: 20px;background-color: rgba(128, 128, 128, 0.871);border-style: none;background: none;color: white;"><a href="./GainSkillsLogin.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-user"></i>Sign up/login</a></button></li>
-               
-            </ul>
-        </nav>
-        <nav id="navgsIR2" style="position: fixed;z-index: 1;top:35px;">
-            <ul id="navgs2ul2">
-                <li id="navgs2li1" class="navgs2licls1"><a href="./BuildResume.html" style="color: white;text-decoration: none;">Build Resume</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./OnlineAssessment.html"  style="color:white;text-decoration: none;">Online Assessment</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./TechnicalInterview.html"  style="color:white;text-decoration: none;">Technical Interview</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./Hrround.html"  style="color:white;text-decoration: none;">Hr Interview</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./FinalR.html"  style="color:white;text-decoration: none;">Final Interview</a></li>
-                <li id="navgs2li2" class="navgs2licls1"><a href="./GroupDiscussion.html"  style="color:white;text-decoration: none;">Group Discussion</a></li>
-            </ul>
-       </nav>
-   </header>
-   <main style="margin-top: 70px;">
+    <header style="position: fixed;width:100%;z-index: 1;">
+		<nav class="nav" style="padding-left: 0px;height: 20px;z-index: 1;">
+			<button id="menubtn1"  style="background: none;border: 2px solid black;padding-left: 10px;color: white;"><i class="fa-solid fa-bars"></i></button>
+			<button id="menubtn2"  style="background: none;border: 2px solid black;padding-left: 10px;color: white;display: none;"><i class="fa-solid fa-x"></i></button>			
+			<ul  class="list" style="gap: 10px;">
+			<a href="./GainSkills.html"><img src="./logo.jpg" alt="" style="height: 20px; width: 150px;"></a>
+			<input type="text" style="width: 450px; border-radius: 20px;height: 24px;border: 1px solid white;" placeholder="     search....."></li>
+			</ul>
+			<ul class="list1 " >
+				<li><a href="./GainSkills.html">Home</a></button></li>
+				<li><a href="./AboutUs.html" >AboutUs</a></button></li>
+				<li  id="navgs1li7"><button style="border-radius: 20px;color: white;padding-left: 5px;background-color: orangered;"><a href="./GainSkillsLogin.html">Sign Up/Login</a></button></li>
+				 </ul>
+			</nav>
+			<nav class="nav2">
+				<ul class="list2">
+					<li><a href="./BuildResume.html" >Build Resume</a></li>
+					<li><a href="./OnlineAssessment.html">Online Assessment</a></li>
+					<li><a href="./TechnicalInterview.html">Technical Interview</a></li>
+					<li><a href="./Hrround.html">Hr Interview</a></li>
+					<li><a href="./FinalR.html">Final Interview</a></li>
+					<li><a href="./GroupDiscussion.html">Group Discussion</a></li>
+				</ul>
+		   </nav>
+           <nav id="menubar1" style="background-color: #000000ae;height: 30px;text-align: center;position: fixed;width: 100%;display: none;">
+			<ul style="display: flex;flex-wrap: wrap;gap: 100px;justify-items: center;text-align: center;padding: 5px;">
+				<li><a href="./GainSkills.html">Home</a></li>
+				<li><a href="./AboutUs.html">About Us</a></li>
+				<li><a href="./GainSkillsLogin.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+   <main>
     <div style="position: relative;">
-    <video src="./childVideo.mp4" style="height: 700px;width: 100%;margin-top: 0px;object-fit: cover;"autoplay muted loop></video>
-    <div id="video-content1" style="height: 650px;width: 95%;position: absolute;top: 20px;padding-left: 0px;">
-        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 300px;padding-top: 250px;"><b>ABOUT US</b></p>
-        <hr style="width: 500px;padding-left: 100px;margin-left: 300px;">
-        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 300px;"><b>Build a future you believe in</b></h1>
-        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 300px;">Scroll Now</h3>
+    <video src="./childVideo.mp4" style="height: 710px;width: 100%;object-fit: cover;"autoplay muted loop id="vid"></video>
+    <div id="video-content1" style="height: 50%;width: 50%;position: absolute;top:150px;padding-left: 0px;padding: 50px;">
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 0px;"><b>About Us</b></p>
+        <hr style="width: 500px;padding-left: 0px;margin-left: 0px;">
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 0px;"><b>Build a future you believe in</b></h1>
+        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;padding-left: 0px;">Scroll Now <i class="fa-solid fa-scroll"></i></h3>
     </div>
 </div>
 </main>
 <article>
-    <div style="width: 800px;height: fit-content;margin-left: 300px;">
+    <div style="width: fit-content;height: fit-content;margin-left: 0px;padding: 250px;">
         <p style="font-family: Verdana, sans-serif;line-height: 1.5;font-size: 15px;">
             Welcome to GainSkills, your ultimate destination for mastering the skills required to ace interviews
              at both startups and multinational corporations (MNCs). Whether you're a fresh graduate stepping into 
@@ -66,7 +78,7 @@
         </p>
     </div>
 </article>
-<footer style="background-image: url('./footerImg.jpg');height: 250px;width: 100%;margin-top: 0px;" id="footer">
+<footer style="background-image: url('./footerImg.jpg');height:fit-content;width: 100%;margin-top: 0px;" id="footer">`
     <div id="" class="footerDivcls1"><a href="" style="text-decoration: none;"></a><h1 style="color: white;">GainSkills</h1><p style="color: white;">Our website is a comprehensive platform dedicated to guiding individuals through the interview process, offering valuable insights and tips to enhance their skills and confidence.</p></div>
     <div class="footerDivcls1"><a href="" style="text-decoration: none;"><h2 style="color: white;">Interview Process Selection</h2>
         <ul style="list-style: none;color: white;">
@@ -100,6 +112,6 @@
     </a></div>
    
    </footer>
-
+   <script src="./GainSkills.js"></script>
 </body>
 </html>
